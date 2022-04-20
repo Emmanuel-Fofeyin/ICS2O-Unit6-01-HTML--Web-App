@@ -6,6 +6,15 @@
 
 'use strict'
 /**
+ * Check servie worker.
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit6-01-HTML", {
+    scope: "/ICS2O-Unit6-01-HTML/",
+  })
+}
+
+/**
  * This function Converts Fehrenheit to Celsius.
  */
 function calculate() {
