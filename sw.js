@@ -1,10 +1,10 @@
-var GHPATH = "/github-page-pwa"
+var GHPATH = "/ICS2O-Unit6-01-HTML"
 var APP_PREFIX = "gppwa_"
 var VERSION = "version_001"
 var URLS = [
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
-  `${GHPATH}/css/style.css`,
+  `${GHPATH}/css/styles.css`,
   `${GHPATH}/android-chrome-512x512.png`,
   `${GHPATH}/js/script.js`,
 ]
@@ -24,6 +24,7 @@ self.addEventListener("fetch", function (e) {
     })
   )
 })
+
 
 self.addEventListener("activate", function (e) {
   e.waitUntil(
